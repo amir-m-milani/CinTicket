@@ -18,3 +18,35 @@ body {
 .menu-header span {
     font-size: 1.8rem;
 }
+
+.gallery {
+    height: 600px;
+}
+
+.gallery .pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    transition: all 2s ease-in-out 0s;
+}
+
+.gallery .pic:hover {
+    background-position: center bottom;
+    /* transform: scale(0.8); */
+}
+
+.gallery .pic-1 {
+    background-image: url("../img/3.webp");
+}
+
+.gallery .pic-2 {
+    background-image: url("../img/4.webp");
+}
+
+.gallery .pic-3 {
+    background-image: url("../img/5.webp");
+}
+
+.gallery .pic-4 {
+    background-image: url("../img/6.webp");
+}

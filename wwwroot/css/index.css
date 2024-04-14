@@ -1,0 +1,24 @@
+body {
+    background-color: #FFF9E3;
+}
+
+.main-header {
+    width: 95%;
+}
+
+.main-header img[alt=Logo] {
+    width: 8.75rem;
+}
+
+
+.menu-header {
+    background-color: #F0F0F0;
+}
+
+.menu-header>div {
+    margin-left: 2rem;
+}
+
+.menu-header span {
+    font-size: 1.8rem;
+}

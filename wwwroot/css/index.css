@@ -8,6 +8,30 @@
     font-display: swap;
 }
 
+@media all and (min-width:992px) {
+    .main-header .search-container {
+        width: 50%;
+    }
+
+    .menu-header span {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media all and (max-width:991px) {
+
+    .menu-header svg,
+    .main-header svg {
+        width: 20px;
+    }
+
+    .main-header .login-container img {
+        width: 25px;
+    }
+
+}
+
 body {
     background-color: #FFF9E3;
     font-family: Kalameh;
@@ -26,9 +50,6 @@ body {
     margin-left: 2rem;
 }
 
-.menu-header span {
-    font-size: 1.8rem;
-}
 
 .gallery {
     height: 600px;

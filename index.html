@@ -18,15 +18,12 @@
         <!-- Main Header -->
         <div
             class="mx-auto d-flex justify-content-between align-items-center  bg-white p-4 rounded rounded-5 container main-header">
-            <!-- Logo -->
-            <div class="">
-                <img class="rounded rounded-circle" src="wwwroot/img/logo.jpg" alt="Logo">
-            </div>
             <!-- Search -->
-            <div class="w-50 ">
+            <div class="order-lg-1 search-container">
                 <div class="input-group">
-                    <input type="text" class="form-control border-end-0" placeholder="اینجا سرچ کن..."
-                        aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control border-end-0 d-none d-lg-inline"
+                        placeholder="اینجا سرچ کن..." aria-label="Username" aria-describedby="basic-addon1">
+                    <!-- icon -->
                     <span class="input-group-text bg-white" id="basic-addon1">
                         <svg width="40" height="45" viewBox="0 0 40 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="11.4032" y1="29.2957" x2="0.403202" y2="44.2957" stroke="black" />
@@ -39,8 +36,12 @@
                 </div>
 
             </div>
+            <!-- Logo -->
+            <div class="order-lg-0">
+                <img class="rounded rounded-circle" src="wwwroot/img/logo.jpg" alt="Logo">
+            </div>
             <!-- Login -->
-            <div class="">
+            <div class="order-lg-2 login-container">
                 <img src="wwwroot/img/login.png" alt="login to account">
             </div>
         </div>
@@ -79,7 +80,8 @@
         </div>
     </header>
     <main>
-        <div class="container mb-3 gallery">
+        <!-- Gallery->laptop -->
+        <div class="container mb-3 d-none d-lg-block gallery">
             <div class="row h-100  rounded rounded-5 overflow-hidden gap-1">
                 <div class="col p-0 pic pic-1">
                     <!-- <img src="wwwroot/img/3.webp" alt="pic 3"> -->
@@ -99,18 +101,53 @@
                 </div>
             </div>
         </div>
+        <!-- Slider->Mobile -->
+        <div class="container mb-3 d-lg-none">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="wwwroot/img/3.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="wwwroot/img/4.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="wwwroot/img/5.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Movies Grid -->
         <div class="container">
             <div class="row justify-content-between mb-3">
-                <div class="col-auto p-0">
+                <div class="col-auto p-lg-0">
                     <img src="wwwroot/img/film-icon.png" alt="film icon">
                     <h4 class="d-inline">فیلم های در حال اجرا</h4>
                 </div>
-                <div class="col-auto p-0">
+                <div class="col-auto p-lg-0">
                     <span>فیلتر</span>
                     <img src="wwwroot/img/filter-icon.png" alt="filter icon">
                 </div>
             </div>
-            <div class="row gap-3">
+            <div class="row gap-3 justify-content-center justify-content-lg-start">
                 <div class="col-auto p-0">
                     <div class="card" style="width: 18rem;">
                         <img src="wwwroot/img/3.webp" class="card-img-top" alt="...">
@@ -153,6 +190,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     <footer></footer>
 </body>

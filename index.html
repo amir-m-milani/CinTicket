@@ -47,7 +47,8 @@
             </div>
             <!-- Login -->
             <div class="order-lg-2 login-container">
-                <img src="wwwroot/img/login.png" alt="login to account">
+                <img class="login-icon" src="wwwroot/img/login.png" alt="login to account" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
             </div>
         </div>
         <!-- Menu Header -->
@@ -197,9 +198,9 @@
         </div>
 
     </main>
-    <footer class="container rounded rounded-5 bg-secondary py-4">
+    <footer class="container rounded rounded-5 bg-secondary py-4 mb-3">
         <div class="row">
-            <div class="col-2 d-flex justify-content-between">
+            <div class="col-auto d-flex gap-2">
                 <span class="text-white">با طراح در ارتباط باشید: </span>
                 <a href="#" class="link-dark">
                     <i class="bi bi-telegram"></i>
@@ -213,6 +214,30 @@
             </div>
         </div>
     </footer>
+    <!-- Login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel">ثبت نام / ورود</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row gap-3" action="" method="post">
+                        <div class="col-12 d-flex gap-2 align-items-center">
+                            <label class="fs-5" for="username">نام کاربری: </label>
+                            <input class="flex-grow-1 py-2 px-1" type="text" id="username" name="username"
+                                placeholder="نام کاربری ...">
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="button" class="btn btn-success w-100">ثبت</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

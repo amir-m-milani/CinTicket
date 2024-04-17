@@ -49,3 +49,7 @@ body {
 .menu-header>div {
     margin-left: 2rem;
 }
+
+.main-header .login-icon {
+    cursor: pointer;
+}

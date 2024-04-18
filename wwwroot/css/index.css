@@ -1,3 +1,9 @@
+@media all and (min-width:992px) {
+    .movies-grid-body .card {
+        width: 18rem;
+    }
+}
+
 .gallery {
     height: 600px;
 }

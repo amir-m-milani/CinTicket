@@ -13,8 +13,12 @@
         width: 50%;
     }
 
-    .menu-header span {
-        font-size: 1.8rem;
+    .menu-header button {
+        font-size: 1.5rem;
+    }
+
+    .menu-header li {
+        font-size: 1.2rem;
     }
 }
 

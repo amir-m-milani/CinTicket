@@ -2,6 +2,11 @@
     .movies-grid-body .card {
         width: 18rem;
     }
+
+    .movies-grid-body img {
+        width: 100%;
+        height: 350px;
+    }
 }
 
 .gallery {

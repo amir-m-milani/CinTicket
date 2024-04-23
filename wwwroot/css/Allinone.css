@@ -9,7 +9,7 @@
 }
 
 @media all and (min-width:992px) {
-    .main-header .search-container {
+    .main-header .search-container { 
         width: 50%;
     }
 

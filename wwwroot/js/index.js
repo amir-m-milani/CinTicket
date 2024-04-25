@@ -29,3 +29,18 @@ cards.forEach((card) => {
     </div>
 </div>`
 });
+
+var dropDownList = [
+    {
+
+    }
+]
+
+function SetDropUp(id, data) {
+    var drop = document.querySelector(`#${id} ul`);
+    drop.innerHTML = "";
+    data.forEach((li) => {
+        drop.innerHTML +=
+            `<li><a class="dropdown-item" href="${li.url}">${li.title}</a></li>`;
+    });
+}
